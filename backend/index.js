@@ -3,7 +3,7 @@ import dotenv from "dotenv";
 import cors from "cors";
 import connectDB from "./config/db.js";
 import authRoutes from "./routes/authRoutes.js";
-import taskRoutes from "./routes/taskRoutes.js"; // ✅ Added
+import taskRoutes from "./routes/taskRoutes.js";
 
 dotenv.config();
 
@@ -21,7 +21,7 @@ app.get("/", (req, res) => res.send("API running..."));
 app.use("/api/auth", authRoutes);
 
 // Task Routes (Protected)
-app.use("/api/tasks", taskRoutes); // ✅ Added
+app.use("/api/tasks", taskRoutes);
 
 // Start Server
 const PORT = process.env.PORT || 5000;
