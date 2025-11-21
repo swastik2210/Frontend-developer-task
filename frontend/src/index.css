@@ -1,0 +1,24 @@
+/* ========================== */
+/*        GLOBAL RESET        */
+/* ========================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ========================== */
+/*        GLOBAL BODY         */
+/* ========================== */
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #eef2f8;
+  color: #1e293b;
+}
+
+/* Smooth animations everywhere */
+html {
+  scroll-behavior: smooth;
+}
